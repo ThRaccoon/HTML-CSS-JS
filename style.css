@@ -1,0 +1,177 @@
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Reset default margin and padding */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Text styling */
+.option, .list-header {
+    color: #333333;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+.list-option {
+    color: #333333;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    padding: 5px;
+}
+
+.description, .list-description {
+    color: #333333;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+}
+
+/* Flexbox container for layout */
+.flexbox {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+}
+
+/* Navigation links */
+.nav-link {
+    color: #333333;
+    background-color: #ffffff;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 16px;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+/* Navigation links container */
+.nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Header styling */
+.header {
+    color: #ffffff;
+    background-color: #2e2e2e;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+
+/* Search bar container */
+.search-container {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    z-index: 10;
+}
+
+/* Search input field */
+.search-bar {
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    padding: 8px;
+    width: 200px;
+}
+
+.search-bar:focus {
+    border-color: #333333;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Sidebar styling */
+.sidebar {
+    background-color: #ffffff;
+    height: 100vh;
+    margin: 0;
+    padding: 15px;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    width: 300px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+/* Sidebar link styling */
+.sidebar a {
+    color: #333333;
+    font-size: 16px;
+    padding-left: 20px;
+    position: relative;
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+/* Sidebar link bullet */
+.sidebar a::before {
+    content: '•';
+    color: #333333;
+    font-size: 18px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* Sidebar link hover effect */
+.sidebar a:hover {
+    padding-left: 25px;
+}
+
+/* Main content styling */
+.main-content {
+    background-color: #ffffff;
+    flex-grow: 1;
+    padding: 15px;
+    border-left: 1px solid #cccccc;
+    overflow-y: auto;
+}
+
+/* Box for content types */
+.type-box {
+    background-color: #ecf0f1;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* Right box styling */
+.right-box {
+    background-color: #ffffff;
+    width: 600px;
+    border-left: 2px solid #cccccc;
+}
+
+/* Horizontal separator */
+.separator {
+    border-top: 2px solid #cccccc;
+    margin: 15px 0;
+}
+
+/* Image scaling */
+img {
+    max-width: 100%;
+    height: auto;
+}
